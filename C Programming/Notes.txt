@@ -1,0 +1,7 @@
+Special Characters (ESCAPE) :
+\n => New Line
+\t => Tab
+\\ => \
+%% => %
+
+(Test)
