@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, s, k;
+    scanf("%d", &n);
+    s = n - 1;
+    k = 1;
+    int line = 1;
+
+    for (int i = 1; i <= (n * 2); i++)
+    {
+        for (int j = 1; j <= s; j++)
+        {
+            printf(" ");
+        }
+        for (int j = 1; j <= k; j++)
+        {
+            if (line % 2 == 0 && line != 0)
+            {
+                printf("-");
+            }
+            else
+            {
+                printf("#");
+            }
+        }
+        line++;
+        printf("\n");
+        if (i <= n - 1)
+        {
+            s--;
+            k = k + 2;
+        }
+        else
+        {
+            s++;
+            k = k - 2;
+        }
+    }
+
+    return 0;
+}
