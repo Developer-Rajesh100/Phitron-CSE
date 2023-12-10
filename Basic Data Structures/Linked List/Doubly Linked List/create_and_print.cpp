@@ -119,6 +119,49 @@ void insert(Node *&head, Node *&tail, int pos, int data)
     newNode->next->prev = newNode;
 }
 
+// This is Delete Head Function
+void delete_head(Node *&head)
+{
+    Node *deleteHead = head;
+    deleteHead->next->prev = NULL;
+    head = deleteHead->next;
+    delete deleteHead;
+}
+
+// This is Delete Tail Function
+void delete_tail(Node *&tail)
+{
+    Node *deleteTail = tail;
+    deleteTail->prev->next = NULL;
+    tail = deleteTail->prev;
+    delete deleteTail;
+}
+
+// This is Delete at Any Position Function
+void delete_node(Node *&head, Node *&tail, int pos)
+{
+    if (pos == 1)
+    {
+        delete_head(head);
+        return;
+    }
+    else if (pos == size(head))
+    {
+        delete_tail(tail);
+        return;
+    }
+
+    Node *tmp = head;
+    for (int i = 1; i < pos - 1; i++)
+    {
+        tmp = tmp->next;
+    }
+    Node *deleteNode = tmp->next;
+    tmp->next = deleteNode->next;
+    deleteNode->next->prev = tmp;
+    delete deleteNode;
+}
+
 int main()
 {
     // Create Node
@@ -140,9 +183,10 @@ int main()
     d->prev = c;
 
     // Call Insert Function
-    insert(head, tail, 0, 600);
+    // insert(head, tail, 0, 600);
 
-    // cout << size(head) << endl;
+    // Call Delete Node Function
+    delete_node(head, tail, 5);
 
     // Print Function Call
     print_forward(head);
