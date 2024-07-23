@@ -1,0 +1,43 @@
+/* Body  */
+body{
+    margin: 0;
+}
+/* Header  */
+header{
+    background-image: url(./assets/banner-cover-image.jpg);
+    background-size: cover;
+}
+
+/* Navbar */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0% 7%;
+}
+
+.nav-items{
+    display: flex;
+    gap: 30px;
+}
+
+.nav-items li{
+    list-style: none;
+    color: #FB9D5C;
+    cursor: pointer;
+    font-size: 18.6px;
+}
+
+/* Banner */
+.hero-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-btn{
+    border: none;
+    background-color: #FB9D5C;
+    border-radius: 4px;
+    padding: 7px;
+}
