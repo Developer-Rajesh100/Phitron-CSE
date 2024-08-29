@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>myapp</title>
+</head>
+<body>
+<h1>This is myapp!!!</h1>
+
+<!--Length-->
+<h3>{{ name | length }}</h3>
+
+<!--Add-->
+<h3>{{ num | add:'8' }}</h3>
+
+<!--Join-->
+<h3>{{ string | join:' * ' }}</h3>
+
+<!--Date-->
+<h3>{{ time | date:"SHORT_DATE_FORMAT" }}</h3>
+<h3>{{ time | date }}</h3>
+<h3>{{ time | date:"D d M Y" }}</h3>
+
+<!--Capfirst-->
+<h3>{{ title | capfirst }}</h3>
+
+<!--Cut-->
+<h3> {{ intro | cut:' ' }} </h3>
+
+<!--First & Last-->
+<h3> {{ string | first }} </h3>
+<h3> {{ string | last }} </h3>
+
+<!--Lower & Upper-->
+<h3> {{ intro | lower }} </h3>
+<h3> {{ intro | upper }} </h3>
+
+<!--Random-->
+<h3> {{ string | random }} </h3>
+
+
+</body>
+</html>
