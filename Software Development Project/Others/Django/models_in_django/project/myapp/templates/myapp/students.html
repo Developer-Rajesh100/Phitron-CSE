@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students</title>
+<!--    Bootstrap CSS CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<h1 style="text-align: center; margin-top: 2rem; color: purple">Students Data</h1>
+
+<section style="width: 75%; margin: auto; margin-top: 3rem">
+<table class="table table-success table-striped text-center">
+  <thead>
+  <thead>
+    <tr>
+      <th scope="col">Roll</th>
+      <th scope="col">Name</th>
+      <th scope="col">Department</th>
+      <th scope="col">Address</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+      <tbody>
+
+    {% for i in students%}
+        <tr>
+            <th scope="row">{{i.roll_no}}</th>
+            <td>{{i.name}}</td>
+            <td>{{i.department}}</td>
+            <td>{{i.address}}</td>
+            <td><a href="{% url 'delete_student' i.roll_no %}" class="btn btn-danger btn-sm">Delete</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</section>
+
+
+
+<!--Bootstrap JS CDN-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
