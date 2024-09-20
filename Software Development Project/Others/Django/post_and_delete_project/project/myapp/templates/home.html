@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Submit Students Data</h1>
+    <form method="post" style="width: 50%">
+    {% load crispy_forms_tags %}
+    {% csrf_token %}
+    {{form | crispy}}
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>

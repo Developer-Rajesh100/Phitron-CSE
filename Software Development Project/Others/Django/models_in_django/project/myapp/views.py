@@ -10,4 +10,4 @@ def students(request):
 def delete_student(request, roll_no):
     student = models.Student.objects.get(pk = roll_no).delete()
     print(student)
-    return redirect('/students/')
+    return redirect('/')
