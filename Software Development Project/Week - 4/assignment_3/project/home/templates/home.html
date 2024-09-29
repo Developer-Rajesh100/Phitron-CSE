@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>All Tasks</title>
+{% endblock %}
+
+{% block content %}
+<h1 class="text-center mt-5 mb-4">Your Task List</h1>
+
+<section style="width: 80%; margin: auto; display: flex; flex-wrap: wrap; justify-content: center" class="gap-5">
+    {% for task in data %}
+
+          <div class="col-sm-5">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{task.title}}</h5>
+                    <p class="card-text">{{task.description}}</p>
+                    <div style="display: flex; gap: 3rem">
+                        <p class="card-text"> <small>Assign Date: <i>{{task.task_assign_date}}</i></small> </p>
+                        <p class="card-text"> <small>Task ID: <i>{{task.id}}</i></small> </p>
+                    </div>
+                    <div>
+                      {% for i in task.categories.all %}
+                        <button type="button" class="btn btn-sm btn-secondary" disabled aria-label="Close">{{i}}</button>
+                      {% endfor %}
+                    </div>
+
+                    {% if task.is_completed == False %}
+                        <a href="{% url 'edit_task' task.id %}"><button type="button" class=" mt-3 btn btn-sm btn-warning">Edit</button></a>
+                        <a href="{% url 'delete_task' task.id %}"><button type="button" class=" mt-3 btn btn-sm btn-danger">Delete</button></a>
+                    {% endif %}
+
+                    {% if task.is_completed != False %}
+                        <button type="button" class=" mt-3 btn btn-sm btn-success" disabled aria-label="Close">✓ Completed</button>
+                    {% endif %}
+
+                </div>
+            </div>
+          </div>
+
+{% endfor %}
+</section>
+
+
+
+
+
+
+
+{% endblock %}

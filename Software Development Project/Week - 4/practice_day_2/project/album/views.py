@@ -9,7 +9,7 @@ def album(request):
         if form.is_valid():
             form.save()
             print(form.cleaned_data)
-            return redirect('album')
+            return redirect('home')
     else:
         form = AlbumForm()
     return render(request, 'album.html', {'form': form})
