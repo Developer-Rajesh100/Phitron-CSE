@@ -6,4 +6,5 @@ urlpatterns = [
     path('', include('home.urls')),
     path('musician/', include('musician.urls')),
     path('album/', include('album.urls')),
+    path('auth/', include('authentication.urls'))
 ]

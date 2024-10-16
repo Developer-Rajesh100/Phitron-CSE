@@ -29,7 +29,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-          <a class="navbar-brand" href="{% url 'home' %}">Module - 15.5</a>
+          <a class="navbar-brand" href="{% url 'home' %}">Module - 19.5</a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a
@@ -39,7 +39,8 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item">
+            {% if request.user.is_authenticated %}
+                <li class="nav-item">
               <a
                 class="nav-link active"
                 aria-current="page"
@@ -55,21 +56,56 @@
                 >Album</a
               >
             </li>
+              {% endif %}
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
+          <div class="d-flex">
+            {% if request.user.is_authenticated %}
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="{% url 'logout' %}"
+                    >Logout</a
+                  >
+                </li>
+              </ul>
+            {% else %}
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="{% url 'register' %}"
+                    >Register</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="{% url 'login' %}"
+                    >Login</a
+                  >
+                </li>
+              </ul>
+            {% endif %}
+          </div>
         </div>
       </div>
     </nav>
+
+
+    <!--Alert for Messages-->
+{% if messages %}
+    {% for mess in messages %}
+        <div style="width: 75%; margin: auto" class="alert alert-{{mess.tags}} alert-dismissible fade show mt-3" role="alert">
+            <strong>{{mess}}</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    {% endfor %}
+{% endif %}
+
 
     <!--Content-->
     {% block content %}{% endblock %}
