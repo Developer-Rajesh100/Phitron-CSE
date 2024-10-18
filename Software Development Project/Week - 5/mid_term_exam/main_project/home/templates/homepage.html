@@ -25,12 +25,11 @@
 <!--Filter by Brand-->
 <section class="mx-5 d-flex flex-wrap gap-5">
     <h3>Filter by Brand: </h3>
-    {% for car in data %}
+    {% for brand in brands %}
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="brand" id="{{car.brand_id}}">
-          <label class="form-check-label" for="{{car.brand_id}}">
-              {{car.brand_name}}
-          </label>
+          <p class="form-check-label">
+              <a href="{% url 'brand_wise_car' brand.brand_name %}">{{brand.brand_name}}</a>
+          </p>
         </div>
     {% endfor %}
 </section>
@@ -39,7 +38,6 @@
     {% for car in data %}
         <div class="card" style="width: 18rem;">
           <img src={{car.car_img.url}} class="card-img-top" alt="{{car.car_img.url}}">
-<!--          <img src="https://images.pexels.com/photos/3972755/pexels-photo-3972755.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">-->
               <div class="card-body">
                 <h5 class="card-title">{{car.car_name}}</h5>
                 <p class="card-text"> <strong>Price:</strong> {{car.car_price}}</p>

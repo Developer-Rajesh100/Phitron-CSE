@@ -11,7 +11,7 @@ class Brand(models.Model):
 
 ########## Car Model ##########
 class Car(models.Model):
-    car_img = models.ImageField(upload_to='car/media/')
+    car_img = models.ImageField(upload_to='upload/')
     car_name = models.CharField(max_length=50)
     car_description = models.TextField()
     car_quantity = models.IntegerField()
