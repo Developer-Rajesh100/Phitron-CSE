@@ -9,8 +9,7 @@ class Brand(models.Model):
         return f"{self.brand_name}"
 
 
-
-# Car Model
+########## Car Model ##########
 class Car(models.Model):
     car_img = models.ImageField(upload_to='car/media/')
     car_name = models.CharField(max_length=50)
@@ -21,3 +20,13 @@ class Car(models.Model):
 
     def __str__(self):
         return f"Name: {self.car_name} | Quantity: {self.car_quantity} | Price: {self.car_price} | Brand: {self.brand_name}"
+
+
+########## Order Model ##########
+class Order(models.Model):
+    car_id = models.IntegerField()
+    username = models.CharField(max_length=50)
+    orderd_on = models.DateTimeField(blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.username} | {self.car_id} | {self.orderd_on}"
