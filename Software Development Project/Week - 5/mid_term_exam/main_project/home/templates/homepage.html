@@ -23,12 +23,17 @@
 <h1 class="text-center mt-5">Car List</h1>
 
 <!--Filter by Brand-->
-<section class="mx-5 d-flex flex-wrap gap-5">
+<section class="mx-5 d-flex flex-wrap gap-3">
     <h3>Filter by Brand: </h3>
+    <div class="form-check">
+          <p class="form-check-label">
+              <a href="{% url 'homepage' %}" style="text-decoration: none">All Brands</a>
+          </p>
+    </div>
     {% for brand in brands %}
         <div class="form-check">
           <p class="form-check-label">
-              <a href="{% url 'brand_wise_car' brand.brand_name %}">{{brand.brand_name}}</a>
+              <a href="{% url 'brand_wise_car' brand.brand_name %}" style="text-decoration: none">{{brand.brand_name}}</a>
           </p>
         </div>
     {% endfor %}

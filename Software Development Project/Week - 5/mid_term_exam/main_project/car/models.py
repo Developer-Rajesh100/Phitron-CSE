@@ -30,3 +30,14 @@ class Order(models.Model):
 
     def __str__(self):
         return f"{self.username} | {self.car_id} | {self.orderd_on}"
+
+
+########## Comment Model ##########
+class Comment(models.Model):
+    car = models.ForeignKey(Car, on_delete=models.CASCADE, related_name='comments', blank=True, null=True)
+    name = models.CharField(max_length=100)
+    comment = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.name} | {self.comment[0:30]}....."
