@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="69a89f17-caab-409f-a798-4573a14093d1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/practice_day_1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/user_login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/user_registration.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/static/img/bank.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/messages.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/templates/navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mamar_bank/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/constants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/migrations/0002_alter_transaction_transaction_type.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/fund_receiver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/fund_sender.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/loan_request.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/transaction_form.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/transaction_report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/templates/transactions/transfer_fund.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/transactions/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/.idea/practice_day_2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/accounts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/accounts/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/core/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/core/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/core/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/core/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/mamar_bank/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/mamar_bank/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/transactions/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/constants.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/transactions/constants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/admin_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/deposite_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/loan_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/transaction_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/transaction_report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/templates/transactions/withdrawal_email.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/transactions/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../practice_day_2/transactions/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../practice_day_2/transactions/views.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2nyqnP5Ttips3Y2ml7vktSu4Dk3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;django.template.preview.state&quot;: &quot;SHOW_EDITOR_AND_PREVIEW&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/rajesh/Desktop/Phitron-CSE/Software Development Project/Week - 6/practice_day_1 (Copy)&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="practice_day_1" type="Python.DjangoServer" factoryName="Django server">
+      <module name="practice_day_1" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="localhost" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PY-242.23726.102" />
+        <option value="bundled-python-sdk-5e1850174b45-399fe30bd8c1-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-242.23726.102" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="69a89f17-caab-409f-a798-4573a14093d1" name="Changes" comment="" />
+      <created>1729955830220</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729955830220</updated>
+      <workItem from="1729955831443" duration="5800000" />
+      <workItem from="1730208544126" duration="11284000" />
+      <workItem from="1730221085000" duration="177000" />
+      <workItem from="1730269422961" duration="26000" />
+      <workItem from="1730270215297" duration="648000" />
+      <workItem from="1730298882913" duration="7652000" />
+      <workItem from="1730354575459" duration="247000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
