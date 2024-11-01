@@ -12,7 +12,7 @@ def userRegistration(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'User Registration Successfully!')
-            return redirect('register')
+            return redirect('login')
     else:
         form = userRegistrationForm()
     return render(request, 'registration.html', {'form': form})
