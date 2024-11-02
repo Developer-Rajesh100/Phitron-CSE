@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% block title %} <title>Home Page</title> {% endblock %}
 {% block content %}
 <!--Hero Section-->
   <section>
@@ -16,7 +16,7 @@
                   <h5 class="card-title">{{book.book_title}}</h5>
                   <p class="card-text"> <strong>Borrowing Price:</strong> {{book.book_borrowing_price}}</p>
                   <p class="card-text"> <strong>Category:</strong> {{book.book_category}}</p>
-                  <a href="#" class="card-link">View Details</a>
+                  <a href="{% url 'book_detail' book.id %}" class="card-link">View Details</a>
                 </div>
           </div>
       {% endfor %}
