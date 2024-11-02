@@ -17,3 +17,12 @@ class Book(models.Model):
     book_category = models.ForeignKey(Category, on_delete=models.CASCADE)
     def __str__(self):
         return f"{self.book_title} | {self.book_borrowing_price}"
+
+
+########## Borrow Model ##########
+class Borrow(models.Model):
+    book_id = models.IntegerField()
+    username = models.CharField(max_length=50)
+    borrowing_on = models.DateTimeField(auto_now_add=True)
+    def __str__(self):
+        return f"{self.username} | {self.book_id}"

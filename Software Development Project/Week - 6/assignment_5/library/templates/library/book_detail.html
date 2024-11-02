@@ -13,9 +13,10 @@
     <p class="card-text"> <strong>Borrowing Price:</strong> {{book.book_borrowing_price}}</p>
     <p class="card-text text-center"><small class="text-body-secondary">{{book.book_category}}</small></p>
     {% if request.user.is_authenticated %}
-      <div>
-        <a href="#" style="width: 100%" class="btn btn-warning px-5">Borrow Now</a>
-      </div>
+      <form method="post" action="{% url 'library:borrowing' book.id %}">
+        {% csrf_token %}
+        <button  style="width: 100%" class="btn btn-warning px-5">Borrow Now</button>
+      </form>
     {% endif %}
   </div>
 </section>
