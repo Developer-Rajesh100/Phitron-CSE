@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
 from django.views.generic import DetailView, UpdateView
 from django.views import View
@@ -22,15 +23,35 @@ class BookDetailView(DetailView):
 
 
 ########## User Profile View ##########
-# class UserProfileView(View):
-#     def get(self, request):
-#         context = {'user': request.user}
-#         return render(request, 'library/user_profile.html', context)
-class UserProfileView(View):
-    def get(self, request):
+class UserProfileView(LoginRequiredMixin, View):
+    template_name = 'library/user_profile.html'
+
+    def get(self, request, *args, **kwargs):
+        # Get user account details
         user_account = UserAccount.objects.get(user=request.user)
-        context = {'user': request.user, 'balance': user_account.balance}
-        return render(request, 'library/user_profile.html', context)
+
+        # Get all borrows for the current user
+        user_borrows = Borrow.objects.filter(username=request.user.username)
+
+        # Prepare borrow records with all required information
+        borrow_records = []
+        for borrow in user_borrows:
+            book = Book.objects.get(id=borrow.book_id)
+            borrow_records.append({
+                'borrow_id': borrow.id,
+                'book_title': book.book_title,
+                'book_borrowing_price': book.book_borrowing_price,
+                'borrowing_on': borrow.borrowing_on
+            })
+
+        # Prepare context data
+        context = {
+            'user': request.user,
+            'balance': user_account.balance,
+            'borrow_records': borrow_records
+        }
+
+        return render(request, self.template_name, context)
 
 
 ########## Money Deposit View ##########

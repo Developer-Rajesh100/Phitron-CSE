@@ -38,7 +38,7 @@ def userLogin(request):
         else:
             login(request, user)
             messages.success(request, 'User Login Successfully!!!')
-            return redirect('homepage')
+            return redirect('login')
     return render(request, 'login.html', {'form': AuthenticationForm})
 
 
@@ -46,7 +46,7 @@ def userLogin(request):
 def userLogout(request):
     logout(request)
     messages.success(request, 'User Logout Successfully!')
-    return redirect('homepage')
+    return redirect('login')
 
 
 ########## User Update Function ##########
