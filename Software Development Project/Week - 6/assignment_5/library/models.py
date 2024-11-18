@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 
 ########## Category Model ##########
@@ -26,3 +27,38 @@ class Borrow(models.Model):
     borrowing_on = models.DateTimeField(auto_now_add=True)
     def __str__(self):
         return f"{self.username} | {self.book_id}"
+
+
+########## Review Model ##########
+# class Review(models.Model):
+#     review_by = models.CharField(max_length=100)
+#     review = models.TextField()
+#     review_on = models.DateTimeField(auto_now_add=True)
+#     book_id = models.IntegerField(blank=True, null=True)
+#     def __str__(self):
+#         return f"Book id: {self.book_id} | Reviewed by: {self.review_by}"
+
+# class Review(models.Model):
+#     book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='reviews')
+#     user = models.ForeignKey(User, on_delete=models.CASCADE)
+#     comment = models.TextField(blank=True)
+#     created_at = models.DateTimeField(auto_now_add=True)
+#
+#     class Meta:
+#         # Ensure one review per user per book
+#         unique_together = ['book', 'user']
+#
+#     def __str__(self):
+#         return f"{self.created_at}"
+
+class Review(models.Model):
+    book = models.ForeignKey('Book', on_delete=models.CASCADE, related_name='reviews')
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    comment = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ['book', 'user']
+
+    def __str__(self):
+        return f"{self.created_at}"

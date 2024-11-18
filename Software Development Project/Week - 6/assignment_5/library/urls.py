@@ -5,8 +5,9 @@ app_name = 'library'
 
 urlpatterns = [
     path('', HomepageView.as_view(), name='homepage'),
-    path('user_profile/', UserProfileView.as_view(), name='user_profile'),
-    path('deposit_money/', DepositMoneyView.as_view(), name='deposit_money'),
-    path('book_detail/<int:id>/', BookDetailView.as_view(), name='book_detail'),
-    path('borrowing_book/<int:id>/', BorrowingView.as_view(), name='borrowing'),
+    # path('user_profile/', UserProfileView.as_view(), name='user_profile'),
+    # path('deposit_money/', DepositMoneyView.as_view(), name='deposit_money'),
+    # path('book_detail/<int:id>/', BookDetailView.as_view(), name='book_detail'),
+    # path('borrowing_book/<int:id>/', BorrowingView.as_view(), name='borrowing'),
+    # path('review/<int:id>/', ReviewView.as_view(), name='review'),
 ]

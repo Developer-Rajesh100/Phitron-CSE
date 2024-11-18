@@ -1,6 +1,6 @@
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, redirect
-from django.views.generic import DetailView, UpdateView
+from django.views.generic import DetailView, CreateView
 from django.views import View
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -105,3 +105,9 @@ class BorrowingView(View):
 
         messages.error(request, 'Failed to borrow book')
         return redirect('library:homepage')
+
+
+########## Review View ##########
+# class ReviewView(LoginRequiredMixin, CreateView):
+#     model = Review
+#     form_class = ReviewForm
